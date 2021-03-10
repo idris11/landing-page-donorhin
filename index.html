@@ -296,8 +296,16 @@
     <!-- Page Specific JS -->
     <script type="text/javascript" src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"></script> 
     <script type="text/javascript" src="assets/js/flipster-custom.js"></script> 
+<script type="text/javascript">
+	const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 
-
+if (iOS) {
+  // Just use the link of your app on the AppStore and replace https:// with itms://
+  window.location.href = "itms://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8";
+}
+	
+	</script> 
+	
 </body>
 </html> 
 
